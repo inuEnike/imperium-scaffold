@@ -1,0 +1,25 @@
+{
+  "name": "imperium-scaffold",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A CLI tool for generating backend module files",
+  "bin": {
+    "imperium": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "bun run build",
+    "dev": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
