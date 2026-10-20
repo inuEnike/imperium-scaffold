@@ -1,7 +1,7 @@
 {
   "name": "imperium-scaffold",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI tool for generating backend module files",
   "repository": {
     "type": "git",
