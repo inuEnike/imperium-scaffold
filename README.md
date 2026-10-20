@@ -56,7 +56,7 @@ src/
 Clone the repository and install the development dependencies:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/inuEnike/imperium-scaffold
 cd imperium-scaffold
 bun install
 ```
