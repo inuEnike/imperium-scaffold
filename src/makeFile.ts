@@ -22,8 +22,16 @@ export const makeFile = async (pathDir: string | undefined) => {
             const className = fileName
                 .replace(".repository", "")
                 + "Repository";
-            console.log(filePath)
-            await writeFile(filePath, content(className).join());
+            try {
+                await writeFile(filePath, content(className).join(), { flag: "wx" });
+                console.log(`Created: ${filePath}`);
+            } catch (error) {
+                if ((error as NodeJS.ErrnoException).code === "EEXIST") {
+                    console.log(`Skipped existing file: ${filePath}`);
+                } else {
+                    throw error;
+                }
+            }
         }
     } catch (error) {
         console.error(error)
