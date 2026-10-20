@@ -3,6 +3,14 @@
   "type": "module",
   "version": "1.0.1",
   "description": "A CLI tool for generating backend module files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inuEnike/imperium-scaffold.git"
+  },
+  "homepage": "https://github.com/inuEnike/imperium-scaffold#readme",
+  "bugs": {
+    "url": "https://github.com/inuEnike/imperium-scaffold/issues"
+  },
   "bin": {
     "imperium": "dist/index.js"
   },
